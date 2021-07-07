@@ -81,7 +81,7 @@ runs multi threaded binary search and displays process time; threads based on us
 */
 void threadedBinSearch(vector<int>& vec, int& target)
 {
-    int threadCount = thread::hardware_concurrency();
+    int threadCount = 2;//thread::hardware_concurrency();
     int mid = (vec.size()-1)/ threadCount;
     int begin = 0;
     int end = 0;
